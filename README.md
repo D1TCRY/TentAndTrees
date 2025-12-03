@@ -1,4 +1,4 @@
-# TentPuzzle
+# TentsAndTrees
 
 Progetto universitario (1° anno) — Ingegneria delle Tecnologie Informatiche, Università di Parma.
 
@@ -9,7 +9,7 @@ Progetto universitario (1° anno) — Ingegneria delle Tecnologie Informatiche, 
 
 ## Descrizione
 
-**TentPuzzle** è un videogioco/puzzle ispirato al classico *Tents and Trees*.
+**TentsAndTrees** è un videogioco/puzzle ispirato al classico *Tents and Trees*.
 
 Obiettivo: posizionare tutte le **tende (⛺)** sulla griglia rispettando i vincoli:
 - ogni tenda deve essere **adiacente ortogonalmente (N4)** a **un albero (🌳)**;
@@ -177,7 +177,7 @@ Nel file `settings.json` puoi personalizzare:
 Dipende dal font/sistema. Puoi sostituire le emoji in `settings.json` con caratteri ASCII (es. `T`, `^`, `g`).
 
 ### Problemi di import
-Esegui i comandi dalla root (TentPuzzle\) e preferisci:
+Esegui i comandi dalla root (TentsAndTrees\) e preferisci:
 
 ```bash
 python -m src.main
