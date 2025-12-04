@@ -134,11 +134,11 @@ I livelli sono file di testo strutturati così:
 Esempio (illustrativo):
 
 ```text
-.1210
-2T..^
-1...T
+.2001
+1T..^
+1^..T
 0....
-1.^..
+1^T..
 ```
 
 ---
