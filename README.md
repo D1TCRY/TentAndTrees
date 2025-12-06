@@ -41,18 +41,74 @@ Il progetto supporta:
 
 ---
 
-## Struttura del progetto (principale)
+## Struttura del progetto
 
-- `src/`
-  - `data/`
-    - `levels/` → livelli in formato `.txt`
-    - `settings.json` → configurazione grafica e parametri (dimensione canvas, colori, emoji, ecc.)
-  - `game/`
-    - `core/` → logica applicativa (App, Game, menu, file management, level parsing)
-    - `gui/` → componenti GUI (Board, Cell, Button, Bar, …)
-    - `state/` → enum e stati (Action, AppPhase, MenuPhase, CellState, …)
-    - `board_game.py` → interfaccia `BoardGame`
-    - `board_game_gui.py` → loop GUI g2d e render dei componenti
+```
+└── TentsAndTrees/
+    ├── req.txt
+    ├── run.bat
+    ├── run.vbs
+    ├── test.bat
+    ├── src/
+    │   ├── __init__.py
+    │   ├── main.py
+    │   ├── data/
+    │   │   ├── settings.json
+    │   │   └── levels/
+    │   │       ├── tents-2025-11-27-8x8-easy.txt
+    │   │       ├── tents-2025-11-27-8x8-medium.txt
+    │   │       ├── tents-2025-11-27-12x12-easy.txt
+    │   │       ├── tents-2025-11-27-12x12-medium.txt
+    │   │       ├── tents-2025-11-27-16x16-easy.txt
+    │   │       ├── tents-2025-11-27-16x16-medium.txt
+    │   │       └── tents-2025-11-27-20x20-special.txt
+    │   ├── g2d_lib/
+    │   │   ├── __init__.py
+    │   │   ├── g2d.py
+    │   │   └── oog2d.py
+    │   └── game/
+    │       ├── __init__.py
+    │       ├── board_game.py
+    │       ├── board_game_gui.py
+    │       ├── core/
+    │       │   ├── __init__.py
+    │       │   ├── app.py
+    │       │   ├── file_management.py
+    │       │   ├── game.py
+    │       │   ├── level.py
+    │       │   ├── menu_manager.py
+    │       │   └── menu_window.py
+    │       ├── gui/
+    │       │   ├── __init__.py
+    │       │   ├── bar.py
+    │       │   ├── board.py
+    │       │   ├── button.py
+    │       │   ├── cell.py
+    │       │   ├── color.py
+    │       │   ├── gui_component.py
+    │       │   └── text.py
+    │       └── state/
+    │           ├── __init__.py
+    │           ├── action.py
+    │           ├── app_phase.py
+    │           ├── cell_state.py
+    │           └── menu_phase.py
+    └── tests/
+        └── game/
+            ├── __init__.py
+            ├── test_board_game_gui.py
+            ├── core/
+            │   ├── __init__.py
+            │   ├── test_app.py
+            │   ├── test_game.py
+            │   ├── test_level.py
+            │   ├── test_menu_manager.py
+            │   └── test_menu_window.py
+            └── gui/
+                ├── __init__.py
+                ├── test_board.py
+                └── test_cell.py
+```
 
 ---
 
