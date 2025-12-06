@@ -7,6 +7,25 @@ Progetto universitario (1° anno) — Ingegneria delle Tecnologie Informatiche, 
 
 ---
 
+## Indice
+
+- [Descrizione](#descrizione)
+- [Features](#features-principali)
+- [Struttura](#struttura-del-progetto)
+- [Requisiti](#requisiti)
+- [Installazione](#installazione)
+- [Avvio](#avvio)
+- [Eseguire i test](#eseguire-i-test)
+- [Come si gioca](#come-si-gioca-controlli)
+- [Formato dei livelli](#formato-dei-livelli-datalevelstxt)
+- [Configurazione](#configurazione-datasettingsjson)
+- [Architettura](#architettura-overview-rapida)
+- [Troubleshooting](#troubleshooting)
+- [Licenza e note](#licenza-e-note)
+- [Autore](#autore)
+
+---
+
 ## Descrizione
 
 **TentsAndTrees** è un videogioco/puzzle ispirato al classico *Tents and Trees*.
@@ -131,10 +150,6 @@ Il progetto supporta:
 
 ```bash
 python -m venv env
-# Windows:
-env\Scripts\activate
-# macOS/Linux:
-source env/bin/activate
 ```
 
 4. Avvia il gioco (vedi sezione successiva).
@@ -142,16 +157,19 @@ source env/bin/activate
 ---
 
 ## Avvio
+Se hai l'ambiente virtuale `env` puoi semplicemente eseguire il file `run.bat` o `run.vbs` per eseguire il programma.
 
-A seconda di come è impostato l’entrypoint, i casi più comuni sono:
-
-### Avvio da `main.py`
-
+In alternativa, puoi eseguire questo comando:
 ```bash
 python -m src.main
 ```
 
-> Se ricevi errori di import, verifica di eseguire il comando dalla **root** del progetto (l’esecuzione con `-m` aiuta).
+dopo aver impostato come working-directory la cartella root del progetto:
+```bash
+cd path/to/TentsAndTrees/
+```
+
+> Se ricevi errori di import, assicurati di eseguire il comando dalla **root** del progetto e di star eseguendo il modulo **src.main**.
 
 ---
 
@@ -227,6 +245,31 @@ Nel file `settings.json` puoi personalizzare:
 
 ---
 
+## Eseguire i test
+
+I test sono eseguibili dalla **root** del progetto (come per l’avvio del programma).
+
+### Windows
+
+Se sei su Windows puoi eseguire direttamente il file `test.bat` usare direttamente:
+
+```bat
+test.bat
+```
+
+### Comando manuale
+
+In alternativa, dalla root del repository esegui:
+
+```bash
+python -m unittest discover -s tests -p "test_*.py"
+```
+
+> Nota: assicurati di lanciare il comando dalla cartella **TentsAndTrees/**, altrimenti `unittest` potrebbe non trovare correttamente i moduli e i test.
+
+
+---
+
 ## Troubleshooting
 
 ### Emoji non visibili / quadratini
@@ -256,3 +299,9 @@ Questo progetto è stato realizzato a scopo didattico.
 
 Diego Cecchelani — Matricola 386276  
 Ingegneria delle Tecnologie Informatiche, Università di Parma
+
+
+Aggiungi questa sezione al README (va bene metterla dopo **Avvio** o prima di **Troubleshooting**):
+
+---
+
