@@ -1,0 +1,51 @@
+{
+  "fps": 30,
+  "scale": 1,
+  "size": 860,
+  "EMPTY": {
+    "text": " ",
+    "background_color": [48, 48, 48],
+    "hover_color": [196, 132, 0],
+    "pressed_color": [196, 132, 0]
+  },
+  "TREE": {
+    "text": "🌳",
+    "background_color": [108, 48, 0],
+    "hover_color": [108, 48, 0],
+    "pressed_color": [108, 48, 0]
+  },
+  "TENT": {
+    "text": "⛺",
+    "background_color": [196, 132, 0],
+    "hover_color": [48, 210, 48],
+    "pressed_color": [48, 210, 48]
+  },
+  "GRASS": {
+    "text": "🌱",
+    "background_color": [48, 210, 48],
+    "hover_color": [24, 24, 24],
+    "pressed_color": [24, 24, 24]
+  },
+  "OUT": {
+    "background_color": [8, 8, 78],
+    "hover_color": [8, 8, 78],
+    "pressed_color": [8, 8, 78]
+  },
+  "menu_window": {
+    "width": 420,
+    "height": 520
+  },
+  "board_game_gui": {
+    "background_color": [4, 4, 16],
+    "board": {
+      "height%": 0.92,
+      "padding": 2
+    },
+    "stats": {
+      "text_size": 30,
+      "text_color": [248, 248, 248],
+      "progress_bar_color": [8, 8, 68],
+      "progress_padding": 6
+    }
+  }
+}
