@@ -19,9 +19,8 @@ Progetto universitario (1° anno) — Ingegneria delle Tecnologie Informatiche, 
 - [Come si gioca](#come-si-gioca-controlli)
 - [Formato dei livelli](#formato-dei-livelli-datalevelstxt)
 - [Configurazione](#configurazione-datasettingsjson)
-- [Architettura](#architettura-overview-rapida)
+- [Architettura](#architettura)
 - [Troubleshooting](#troubleshooting)
-- [Licenza e note](#licenza-e-note)
 - [Autore](#autore)
 
 ---
@@ -173,6 +172,30 @@ cd path/to/TentsAndTrees/
 
 ---
 
+## Eseguire i test
+
+I test sono eseguibili dalla **root** del progetto (come per l’avvio del programma).
+
+### Windows
+
+Se sei su Windows puoi eseguire direttamente il file `test.bat` usare direttamente:
+
+```bat
+test.bat
+```
+
+### Comando manuale
+
+In alternativa, dalla root del repository esegui:
+
+```bash
+python -m unittest discover -s tests -p "test_*.py"
+```
+
+> Nota: assicurati di lanciare il comando dalla cartella **TentsAndTrees/**, altrimenti `unittest` potrebbe non trovare correttamente i moduli e i test.
+
+---
+
 ## Come si gioca (controlli)
 
 Nel menu (finestra Tkinter):
@@ -230,7 +253,7 @@ Nel file `settings.json` puoi personalizzare:
 
 ---
 
-## Architettura (overview rapida)
+## Architettura
 
 - `App` gestisce lo **stato dell’applicazione** (`AppPhase`) e coordina:
   - `MenuManager` (apertura menu Tkinter e scelta livello)
@@ -242,31 +265,6 @@ Nel file `settings.json` puoi personalizzare:
   - condizione di vittoria (`finished`)
   - stato testuale (`status`)
   - generazione e validazione board (`generate_board`, `is_valid_board`)
-
----
-
-## Eseguire i test
-
-I test sono eseguibili dalla **root** del progetto (come per l’avvio del programma).
-
-### Windows
-
-Se sei su Windows puoi eseguire direttamente il file `test.bat` usare direttamente:
-
-```bat
-test.bat
-```
-
-### Comando manuale
-
-In alternativa, dalla root del repository esegui:
-
-```bash
-python -m unittest discover -s tests -p "test_*.py"
-```
-
-> Nota: assicurati di lanciare il comando dalla cartella **TentsAndTrees/**, altrimenti `unittest` potrebbe non trovare correttamente i moduli e i test.
-
 
 ---
 
@@ -289,19 +287,7 @@ sudo apt-get install python3-tk
 
 ---
 
-## Licenza e note
-
-Questo progetto è stato realizzato a scopo didattico.  
-
----
-
 ## Autore
 
 Diego Cecchelani — Matricola 386276  
 Ingegneria delle Tecnologie Informatiche, Università di Parma
-
-
-Aggiungi questa sezione al README (va bene metterla dopo **Avvio** o prima di **Troubleshooting**):
-
----
-
