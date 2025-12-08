@@ -156,14 +156,17 @@ python -m venv env
 ---
 
 ## Avvio
+### Windows
 Se hai l'ambiente virtuale `env` puoi semplicemente eseguire il file `run.bat` o `run.vbs` per eseguire il programma.
 
-In alternativa, puoi eseguire questo comando:
+### Comando manuale
+
+In alternativa esegui il seguente comando:
 ```bash
 python -m src.main
 ```
 
-dopo aver impostato come working-directory la cartella root del progetto:
+dopo aver impostato come working-directory la cartella root del repository:
 ```bash
 cd path/to/TentsAndTrees/
 ```
@@ -178,7 +181,7 @@ I test sono eseguibili dalla **root** del progetto (come per l’avvio del progr
 
 ### Windows
 
-Se sei su Windows puoi eseguire direttamente il file `test.bat` usare direttamente:
+Se sei su Windows puoi eseguire direttamente il file `test.bat`:
 
 ```bat
 test.bat
